@@ -64,6 +64,7 @@ int mx_count_words(const char *str, char c);
 char *mx_strnew(const int size);
 char **mx_strsplit(const char *s, char c);
 char *mx_file_to_str(const char *file);
+char *mx_itoa(int number);
 
 // List pack:
 t_edge *mx_create_edge(int dest);

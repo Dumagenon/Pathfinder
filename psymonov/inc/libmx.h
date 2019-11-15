@@ -52,18 +52,19 @@ void mx_printstr(const char *s);
 void mx_printint(int n);
 
 // String pack:
-int mx_strlen(const char *s); // ***
-void mx_strdel(char **str); // ***
-int mx_get_char_index(const char *str, char c); // ***
-char *mx_strdup(const char *s1); // ***
-char *mx_strndup(const char *s1, size_t n); // ***
-char *mx_strcpy(char *dst, const char *src); // ***
-char *mx_strncpy(char *dst, const char *src, int len); // ***
-int mx_strcmp(const char *s1, const char *s2); // ***
-int mx_count_words(const char *str, char c); // ***
-char *mx_strnew(const int size); // ***
-char **mx_strsplit(const char *s, char c); // ***
-char *mx_file_to_str(const char *file); // ***
+int mx_strlen(const char *s);
+void mx_strdel(char **str);
+int mx_get_char_index(const char *str, char c);
+char *mx_strdup(const char *s1);
+char *mx_strndup(const char *s1, size_t n);
+char *mx_strcpy(char *dst, const char *src);
+char *mx_strncpy(char *dst, const char *src, int len);
+int mx_strcmp(const char *s1, const char *s2);
+int mx_count_words(const char *str, char c);
+char *mx_strnew(const int size);
+char **mx_strsplit(const char *s, char c);
+char *mx_file_to_str(const char *file);
+char *mx_itoa(int number);
 
 // List pack:
 t_edge *mx_create_edge(int dest);

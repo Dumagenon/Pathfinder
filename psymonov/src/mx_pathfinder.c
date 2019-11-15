@@ -4,8 +4,8 @@ int main(int argc, char const *argv[])
 {
 	if (argc != 2) 
 	{
-		mx_printerr("usage: ./pathfinder [filename]");
-		exit(0);
+		mx_printerr("usage: ./pathfinder [filename]\n");
+		exit(1);
 	}
 	// Get info from file to string
 	char *file = mx_file_to_str(argv[1]);

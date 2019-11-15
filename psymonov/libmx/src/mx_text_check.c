@@ -22,16 +22,16 @@ char **mx_text_check(const char *s, int *V) {
             for (int j = 0; tmp[i][j]; j++) {
                 if(!(mx_isdigit(tmp[0][j])))
                 {
-                    mx_printerr("error: line 1 isn't valid");
-                    exit(0);
+                    mx_printerr("error: line 1 isn't valid\n");
+                    exit(1);
                 }
             }
         else {
             if (mx_line_check(tmp[i]) == false) {
                 mx_printerr("error: line ");
-                mx_printint(i + 1);
-                mx_printerr(" isn't valid");
-                exit(0);
+                mx_printerr(mx_itoa(i + 1));
+                mx_printerr(" isn't valid\n");
+                exit(1);
             }
         }
     }

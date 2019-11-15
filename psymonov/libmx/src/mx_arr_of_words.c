@@ -23,8 +23,8 @@ static void mx_add_word(char **arr, char *str, int V) {
         id++;
     }
     if (id >= V) {
-        mx_printerr("error: invalid number of islands");
-	 	exit(0);
+        mx_printerr("error: invalid number of islands\n");
+	 	exit(1);
     }
     arr[id] = str;
 }
@@ -42,8 +42,8 @@ char **mx_arr_of_words(char **arr, int V) {
     while (res[idWord] && mx_strlen(res[idWord])) idWord++;
 
     if (idWord < V) {
-        mx_printerr("error: invalid number of islands");
-	 	exit(0);
+        mx_printerr("error: invalid number of islands\n");
+	 	exit(1);
     }
     return res;
 }
